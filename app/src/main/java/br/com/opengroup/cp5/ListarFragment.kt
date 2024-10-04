@@ -1,18 +1,19 @@
 package br.com.opengroup.cp5
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.LinearLayout
-import android.widget.ListAdapter
-import android.widget.ListView
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import br.com.opengroup.cp5.database.DatabaseHelper
-import br.com.opengroup.cp5.entities.Usuario
 
-class ListarFragment : Fragment() {
+class ListarFragment: Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -21,14 +22,11 @@ class ListarFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val listView: ListView = view.findViewById(R.id.listView)
+        val recyclerView = view.findViewById<RecyclerView>(R.id.listaUsuarios)
         val usuarios = DatabaseHelper(requireContext()).selectUsuarios()
-        listView.adapter = ArrayAdapter<Usuario>(
-            requireContext(),
-            android.R.layout.simple_list_item_1,
-            usuarios
-        )
+        val adapter = UsuarioAdapter(usuarios, requireContext())
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        super.onViewCreated(view, savedInstanceState)
     }
-
 }

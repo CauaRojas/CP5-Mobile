@@ -13,7 +13,12 @@ class MainActivity : AppCompatActivity() {
         val btnLista = findViewById<View>(R.id.btnLista)
 
         btnCadastro.setOnClickListener {
-            val fragment = CadastroFragment()
+            val fragment = CadastroFragment(null, null, null, null, null, null)
+            supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, fragment).commit()
+        }
+
+        btnLista.setOnClickListener {
+            val fragment = ListarFragment()
             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, fragment).commit()
         }
 
