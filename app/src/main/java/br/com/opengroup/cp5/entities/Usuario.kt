@@ -18,4 +18,8 @@ class Usuario{
         this.peso = peso
     }
 
+    override fun toString(): String {
+        return "Usuario(id=$id, nome='$nome', telefone='$telefone', sobrenome='$sobrenome', estado='$estado', peso=$peso)"
+    }
+
 }
