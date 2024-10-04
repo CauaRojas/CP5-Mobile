@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CP5</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="salvar">Salvar</string>
+    <string name="lista">Lista</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="estado">Estado</string>
+    <string name="peso">Peso</string>
+</resources>

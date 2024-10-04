@@ -26,6 +26,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNome"
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
                 android:hint="@string/nome" />
@@ -37,6 +38,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtSobrenome"
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
                 android:hint="@string/sobrenome" />
@@ -48,6 +50,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtTelefone"
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
                 android:hint="@string/telefone" />
@@ -59,7 +62,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/type"
+                android:id="@+id/txtTelefone"
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
                 android:hint="@string/peso" />
