@@ -17,5 +17,10 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, fragment).commit()
         }
 
+        btnLista.setOnClickListener {
+            val fragment = ListarFragment()
+            supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerView, fragment).commit()
+        }
+
     }
 }

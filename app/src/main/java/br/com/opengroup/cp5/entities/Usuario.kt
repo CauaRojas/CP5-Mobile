@@ -19,7 +19,8 @@ class Usuario{
     }
 
     override fun toString(): String {
-        return "Usuario(id=$id, nome='$nome', telefone='$telefone', sobrenome='$sobrenome', estado='$estado', peso=$peso)"
+        //return "Usuario(id=$id, nome='$nome', telefone='$telefone', sobrenome='$sobrenome', estado='$estado', peso=$peso)"
+        return "$nome $sobrenome - $estado, $peso KG, $telefone"
     }
 
 }
