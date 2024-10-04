@@ -62,7 +62,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txtTelefone"
+                android:id="@+id/txtPeso"
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
                 android:hint="@string/peso" />
@@ -82,7 +82,7 @@
             android:layout_height="54dp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btnSalvar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/salvar" />
