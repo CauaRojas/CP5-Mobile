@@ -16,8 +16,9 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="104dp"
-            android:src="@tools:sample/avatars"
-            app:srcCompat="@drawable/form_svgrepo_com" />
+            android:src="@drawable/form_svgrepo_com"
+            app:srcCompat="@drawable/form_svgrepo_com"
+            tools:srcCompat="@drawable/form_svgrepo_com" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/TextInputLayout"
