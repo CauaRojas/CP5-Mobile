@@ -7,7 +7,7 @@ import android.util.Log
 import br.com.opengroup.cp5.entities.Usuario
 import java.lang.Exception
 
-class DatabaseHelper(context:Context) : SQLiteOpenHelper(context, "Database", null, 1) {
+class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, "Database", null, 1) {
     override fun onCreate(db: SQLiteDatabase?) {
         val sql = "CREATE TABLE IF NOT EXISTS T_USUARIO(" +
                 "id_usuario INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT," +
